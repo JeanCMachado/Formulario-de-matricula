@@ -30,7 +30,46 @@
                 <h1>Formulário de Matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã
                 </p>
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="imput-wrapper">
+                            <label for="fullname">Nome Completo:</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Digite o Nome">
+                        </div>
+
+                        <div class="imput-wrapper">
+                            <label for="birthday">Data de Nascimento:</label>
+                            <input type="date" name="birthday" id="birthday">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="female">Feminino</option>
+                                <option value="male">Masculino</option>
+                                <option value="NA">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações Médicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A criança possui alguam condição médica?"></textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <input type="file" name="birth-file" id="birth-file">
+                            <img src="Assets/icons/cloud-upload.svg" alt="">
+                            <p>clique aqui para <br>
+                            selecionar os arquivos</p>
+                        </div>
+                    </fieldset>
+                </form>
+
             </div>
+
         </main>
 
         <aside>
@@ -42,7 +81,8 @@
                         conta
                     </h2>
                     <p>
-                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+                        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e
+                        estimulante.
                     </p>
                 </header>
 
