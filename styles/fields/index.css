@@ -26,6 +26,8 @@ textarea:focus {
 }
 
 input[type="date"]{
+    position: relative;
+
     &::-webkit-calendar-picker-indicator{
         opacity: 0;
     }
